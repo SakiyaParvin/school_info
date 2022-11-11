@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:s_name",
+ "creation": "2022-09-25 22:25:58.106320",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "s_name",
+  "date_of_birth",
+  "age",
+  "sex",
+  "class_name_div",
+  "class_mentor",
+  "fees",
+  "address",
+  "phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "fees",
+   "fieldtype": "Int",
+   "label": "Fees",
+   "read_only": 1
+  },
+  {
+   "fieldname": "s_name",
+   "fieldtype": "Data",
+   "label": " Student name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "class_name_div",
+   "fieldtype": "Data",
+   "label": "Class ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "class_mentor",
+   "fieldtype": "Data",
+   "label": "Class Mentor"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Data",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Data",
+   "label": "Sex"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Int",
+   "label": "Phone number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-10 12:35:12.749725",
+ "modified_by": "Administrator",
+ "module": "school-info",
+ "name": "student",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

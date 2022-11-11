@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:first_name",
+ "creation": "2022-09-25 19:51:33.821044",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name",
+  "dob",
+  "age",
+  "sex",
+  "fathers_name",
+  "mothers_name",
+  "address",
+  "phone_number",
+  "class_of_join_link",
+  "class_name_and_division",
+  "class_mentor",
+  "class_range_link",
+  "total_fees",
+  "date_of_join",
+  "fees_paid",
+  "student_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "first name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "full name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "age",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "label": "sex",
+   "options": "male\nfemale"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "address"
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "label": "fathers name"
+  },
+  {
+   "fieldname": "mothers_name",
+   "fieldtype": "Data",
+   "label": "mothers name"
+  },
+  {
+   "fieldname": "date_of_join",
+   "fieldtype": "Date",
+   "label": "date of join"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of birth",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "class info.namediv",
+   "fieldname": "class_of_join_link",
+   "fieldtype": "Link",
+   "label": "class of join",
+   "options": "class info"
+  },
+  {
+   "fieldname": "class_name_and_division",
+   "fieldtype": "Data",
+   "label": "class name and division"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Int",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "fees_paid",
+   "fieldtype": "Select",
+   "label": "Fees Paid",
+   "options": "Paid\nNot paid"
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Int",
+   "label": "Student id"
+  },
+  {
+   "fieldname": "total_fees",
+   "fieldtype": "Int",
+   "label": "Total fees"
+  },
+  {
+   "fieldname": "class_mentor",
+   "fieldtype": "Data",
+   "label": "Class mentor"
+  },
+  {
+   "fieldname": "class_range_link",
+   "fieldtype": "Link",
+   "label": "Class range",
+   "options": "fee structure"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-10 12:29:09.560615",
+ "modified_by": "Administrator",
+ "module": "school-info",
+ "name": "studentreg",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name"
+}

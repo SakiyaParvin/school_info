@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-27 12:26:44.683693",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_range",
+  "admission_fee",
+  "special_fee",
+  "tution_fee",
+  "coution_deposit",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "admission_fee",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Admission fee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "special_fee",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Special fee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tution_fee",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Tution fee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "coution_deposit",
+   "fieldtype": "Int",
+   "label": "Coution deposit"
+  },
+  {
+   "fieldname": "class_range",
+   "fieldtype": "Select",
+   "label": "class",
+   "options": "select\n1-4\n5-8\n9-10"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-06 10:46:18.909786",
+ "modified_by": "Administrator",
+ "module": "school-info",
+ "name": "fee structure",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "class_range"
+}

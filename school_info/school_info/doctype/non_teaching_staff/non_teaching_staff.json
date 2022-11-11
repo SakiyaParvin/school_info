@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:staff_name",
+ "creation": "2022-10-06 18:56:36.731325",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_name",
+  "employment_type",
+  "work",
+  "salary",
+  "date_of_birth"
+ ],
+ "fields": [
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Data",
+   "label": "Staff name",
+   "unique": 1
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Data",
+   "label": "Employment type"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Int",
+   "label": "Salary"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "work",
+   "fieldtype": "Data",
+   "label": "Work"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-07 11:13:51.977053",
+ "modified_by": "Administrator",
+ "module": "school-info",
+ "name": "Non Teaching Staff",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

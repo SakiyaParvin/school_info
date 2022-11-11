@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:member_name",
+ "creation": "2022-10-07 18:25:43.648532",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "library_member_link",
+  "article_name",
+  "type",
+  "date_of_transaction",
+  "amended_from",
+  "member_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "article_name",
+   "fieldtype": "Data",
+   "label": "Article name"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Issue\nReturn"
+  },
+  {
+   "fieldname": "date_of_transaction",
+   "fieldtype": "Date",
+   "label": "Date of transaction"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Transaction",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member name",
+   "unique": 1
+  },
+  {
+   "fieldname": "library_member_link",
+   "fieldtype": "Link",
+   "label": "Library Member",
+   "options": "Library Membership"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-10-10 13:40:01.929371",
+ "modified_by": "Administrator",
+ "module": "school-info",
+ "name": "Library Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

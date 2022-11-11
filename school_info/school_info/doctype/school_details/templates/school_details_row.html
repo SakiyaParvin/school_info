@@ -1,0 +1,36 @@
+
+<!-- this is a sample default list template -->
+<div class="main" style="background-color:#e5e5e5;">
+
+	<div class="center">
+		<h1>{{ doc.school_name }}</h1>
+	</div>
+	<div class="rightNav">
+        <button class="btn1">Registration</button>
+        <button class="btn2">Search</button>
+    </div>
+
+    <div class="main" style="background-color:#e5e5e5;">
+        <img src="{{ doc.school_image }}" style="width:100%;">
+    </div>
+    <div>
+        
+		<div class="main">
+			<h2>ABOUT:</h1>
+			<p class="text-muted"> {{ doc.description }}</p>
+		</div>
+		<div class="list">
+			<h2>FACILITIES:</h1>
+			<p class="text-muted"> {{ doc.facilities }}</p>
+		</div>
+    </div>
+	<div class="right">
+
+		<div class="right">
+			<h2>email:</h2> 
+			<strong>{{ email }}</strong></div>
+		<div class="right">
+			<h2>contact:</h2> 
+			<strong>{{ contact }}</strong></div>
+	</div>
+</div>

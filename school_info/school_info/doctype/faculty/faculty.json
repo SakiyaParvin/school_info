@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:faculty_name",
+ "creation": "2022-09-25 22:17:36.805012",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "faculty_name",
+  "subject",
+  "employment_type",
+  "salary",
+  "date_of_birth"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "subject"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Data",
+   "label": "employment type"
+  },
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Data",
+   "label": "faculty name",
+   "unique": 1
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Int",
+   "label": "salary"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Data",
+   "label": "Date of birth"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-07 11:21:15.500829",
+ "modified_by": "Administrator",
+ "module": "school-info",
+ "name": "Faculty",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-25 21:40:40.817729",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "division",
+  "namediv",
+  "medium",
+  "class_mentor",
+  "total_students"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "name"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "division"
+  },
+  {
+   "fetch_from": "faculty",
+   "fieldname": "class_mentor",
+   "fieldtype": "Link",
+   "label": "class mentor",
+   "options": "Faculty"
+  },
+  {
+   "fieldname": "total_students",
+   "fieldtype": "Data",
+   "label": "total students"
+  },
+  {
+   "fieldname": "medium",
+   "fieldtype": "Select",
+   "label": "medium",
+   "options": "select\nenglish\nmalayalam"
+  },
+  {
+   "fieldname": "namediv",
+   "fieldtype": "Data",
+   "label": "namediv",
+   "read_only": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-06 16:18:33.854238",
+ "modified_by": "Administrator",
+ "module": "school-info",
+ "name": "class info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "namediv"
+}

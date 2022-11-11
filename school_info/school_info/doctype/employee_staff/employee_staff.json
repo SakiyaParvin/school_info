@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee_name",
+ "creation": "2022-10-06 16:27:41.900700",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_name",
+  "status",
+  "date_of_birth",
+  "employee_id",
+  "designation",
+  "type",
+  "subject",
+  "date_of_join",
+  "salary",
+  "increment",
+  "total_salary",
+  "work"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Int",
+   "label": "Salary"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "select\nTeaching\nNon Teaching"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "select\nTemporary\nPermanent"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Select",
+   "label": "Designation",
+   "options": "select\nAssistant Professor\nGuest"
+  },
+  {
+   "fieldname": "increment",
+   "fieldtype": "Int",
+   "label": "Increment"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Select",
+   "label": "Subject",
+   "options": "select\nMalayalam\nMaths\nChemistry\nPhysics\nBiology\nSocial science\nEVS\nPT\nArabic"
+  },
+  {
+   "fieldname": "date_of_join",
+   "fieldtype": "Date",
+   "label": "Date of join"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "total_salary",
+   "fieldtype": "Int",
+   "label": "Total salary"
+  },
+  {
+   "fieldname": "work",
+   "fieldtype": "Select",
+   "label": "Work",
+   "options": "select\nDriver\nSecurity\nCleaning staff\nOffice attender"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-07 11:24:03.621942",
+ "modified_by": "Administrator",
+ "module": "school-info",
+ "name": "Employee Staff",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
